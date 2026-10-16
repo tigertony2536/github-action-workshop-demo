@@ -4,6 +4,9 @@ on: push
 jobs:
   lint:
     runs-on:  ubuntu-latest
+    defaults:
+      run:
+        working-directory: client
     steps:
       - name: Get Code
         uses: actions/checkout@v7
